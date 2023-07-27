@@ -18,7 +18,7 @@ struct SearchView: View {
             NavigationView {
                 VStack {
                     if viewModel.isLoading {
-                        Color(red: 0.94, green: 0.95, blue: 0.96)
+                        Color("Background")
                             .ignoresSafeArea()
                             .overlay {
                                 ProgressView()
@@ -46,7 +46,7 @@ struct SearchView: View {
                         }
                     } else {
                         ZStack {
-                            Color(red: 0.94, green: 0.95, blue: 0.96)
+                            Color("Background")
                                 .ignoresSafeArea()
                             VStack (spacing: 16) {
                                 titleView
@@ -74,7 +74,7 @@ struct SearchView: View {
                                  checkInfoElement: false)
                     }
                     .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                    .listRowBackground(Color(red: 0.94, green: 0.95, blue: 0.96))
+                    .listRowBackground(Color("Background"))
                     .padding(.top, 6)
                     .padding(.bottom, 12)
                     
@@ -88,7 +88,7 @@ struct SearchView: View {
                         
                     }
                     .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                    .listRowBackground(Color(red: 0.94, green: 0.95, blue: 0.96))
+                    .listRowBackground(Color("Background"))
                     .padding(.bottom, 12)
                 }
             }
@@ -103,12 +103,12 @@ struct SearchView: View {
                     Font.custom("SFProText-Semibold", size: 15)
                 )
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.05, green: 0.07, blue: 0.11))
+                .foregroundColor(Color(red: 0.050, green: 0.070, blue: 0.110))
             
             Text("3 сентября, 1 чел")
                 .font(Font.custom("SFProText-Regular", size: 11))
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color(red: 0.35, green: 0.39, blue: 0.45))
+                .foregroundColor(Color(red: 0.350, green: 0.390, blue: 0.450))
         }
     }
 }

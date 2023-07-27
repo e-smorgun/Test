@@ -18,7 +18,7 @@ struct FlightInfoView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 0.94, green: 0.95, blue: 0.96)
+                Color("Background")
                     .ignoresSafeArea()
                 
                 VStack(spacing: 32) {

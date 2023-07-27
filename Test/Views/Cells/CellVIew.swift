@@ -26,7 +26,7 @@ struct CellView: View {
                     .foregroundColor(.white)
                     .background {
                         RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color(red: 0.21, green: 0.78, blue: 0.41))
+                            .foregroundColor(Color(red: 0.210, green: 0.780, blue: 0.410))
                             .padding(.leading, 8)
                             .padding(.trailing, -8)
                             .padding(.vertical, -2)
@@ -47,7 +47,7 @@ struct CellView: View {
                 .listRowSeparator(.hidden)
                 .background {
                     RoundedRectangle(cornerRadius: 10.0)
-                        .fill(Color(.white))
+                        .fill(Color("Table"))
                 }
         }
     }
@@ -75,7 +75,7 @@ struct CellView: View {
                 Text("\(info.price.value) ₽")
                     .font(
                         Font.custom("SFProText-Semibold", size: 19)                    )
-                    .foregroundColor(Color(red: 0.05, green: 0.45, blue: 1))
+                    .foregroundColor(Color(red: 0.050, green: 0.450, blue: 10))
                 
                 Spacer()
                 
@@ -99,7 +99,7 @@ struct CellView: View {
                 .font(
                 Font.custom("SFProText-Semibold", size: 15)
                 )
-                .foregroundColor(Color(red: 0.05, green: 0.07, blue: 0.11))
+                .foregroundColor(Color(red: 0.050, green: 0.070, blue: 0.110))
                 .frame(maxWidth: .infinity, alignment: .topLeading)
                 .padding(.leading, 12)
         }
@@ -150,7 +150,7 @@ struct CellView: View {
             HStack {
                 Text(name)
                     .font(Font.custom("SFProText-Semibold", size: 15))
-                    .foregroundColor(Color(red: 0.05, green: 0.07, blue: 0.11))
+                    .foregroundColor(Color(red: 0.050, green: 0.070, blue: 0.110))
                     .frame(maxWidth: .infinity, alignment: .topLeading)
                 
                 Spacer()
@@ -158,14 +158,14 @@ struct CellView: View {
                 Text(formatToTime(dateString: date))
                     .font(Font.custom("SFProText-Semibold", size: 15))
                     .multilineTextAlignment(.trailing)
-                    .foregroundColor(Color(red: 0.05, green: 0.07, blue: 0.11))
+                    .foregroundColor(Color(red: 0.050, green: 0.070, blue: 0.110))
                     .frame(maxWidth: .infinity, alignment: .topTrailing)
             }
             
             HStack {
                 Text(iata)
                     .font(Font.custom("SFProText-Regular", size: 13))
-                    .foregroundColor(Color(red: 0.35, green: 0.39, blue: 0.45))
+                    .foregroundColor(Color(red: 0.350, green: 0.390, blue: 0.450))
                     .frame(maxWidth: .infinity, alignment: .topLeading)
                 
                 Spacer()
@@ -173,7 +173,7 @@ struct CellView: View {
                 Text(formatToDate(dateString: date))
                     .font(Font.custom("SFProText-Regular", size: 13))
                     .multilineTextAlignment(.trailing)
-                    .foregroundColor(Color(red: 0.35, green: 0.39, blue: 0.45))
+                    .foregroundColor(Color(red: 0.350, green: 0.390, blue: 0.450))
             }
         }
     }
